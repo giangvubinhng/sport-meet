@@ -50,14 +50,34 @@ function AddDialog() {
             <div className="col-span-3">
               <Select>
                 <SelectTrigger className="w-[180px]">
+                  <SelectValue placeholder="Select a type" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectGroup>
+                    <SelectLabel>Select Type</SelectLabel>
+                    <SelectItem value="pickup">Pick up</SelectItem>
+                    <SelectItem value="official">Official</SelectItem>
+                  </SelectGroup>
+                </SelectContent>
+              </Select>
+
+            </div>
+          </div>
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="username" className="text-right">
+              Sport
+            </Label>
+            <div className="col-span-3">
+              <Select>
+                <SelectTrigger className="w-[180px]">
                   <SelectValue placeholder="Select a sport" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Sport</SelectLabel>
-                    <SelectItem value="apple">Soccer</SelectItem>
-                    <SelectItem value="banana">Basketball</SelectItem>
-                    <SelectItem value="blueberry">Football</SelectItem>
+                    <SelectItem value="soccer">Soccer</SelectItem>
+                    <SelectItem value="basketball">Basketball</SelectItem>
+                    <SelectItem value="football">Football</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>

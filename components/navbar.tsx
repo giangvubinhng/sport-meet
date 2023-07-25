@@ -25,8 +25,8 @@ function Navbar() {
                 <Link href="/">
                   Home
                 </Link>
-                <Link href="/pickups">
-                  Pick ups
+                <Link href="/events">
+                  Events
                 </Link>
 
               </div>
